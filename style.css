@@ -1,16 +1,34 @@
-/* Your CSS styles here */
-body {
+/* Main body styling */
+body, html {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
     padding: 20px;
 }
-/* More CSS styles */
+
+/* Styling for headings and paragraphs */
+h1, p {
+    color: navy;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input boxes within the .blank class */
 .blank input[type="text"] {
-    width: 12px; /* Adjusts the width of the input box */
-    height: 20px; /* Adjusts the height of the input box */
-    font-size: 14px; /* Adjusts the size of the input text */
+    width: 12px;
+    height: 20px;
+    font-size: 14px;
     border-bottom: 2px solid black;
     border-top: none;
     border-left: none;
@@ -18,4 +36,15 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+/* Prevents breaking around inline elements */
+.nowrap, .nowrap span, .nowrap input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Styling for form sections for spacing */
+#puzzleSection, #introduction, #unscrambleArea {
+    margin-bottom: 20px;
 }
