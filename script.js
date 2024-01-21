@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('puzzleForm');
     const unscrambleInputs = document.querySelectorAll('#unscrambleArea input');
     const letterInputs = document.querySelectorAll('.blank input');
-    const correctAnswer = "Laureate"; // Correct answer set here
+    const correctAnswer = "laureate"; // Correct answer set here
 
     function getCollectedLetters() {
         return Array.from(letterInputs).map(input => input.value || '_').join('');
